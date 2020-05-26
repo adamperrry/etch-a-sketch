@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Bungee+Shade&family=Fascinate+Inline&family=Fascinate&family=Fredericka+the+Great&family=Galada&family=Grand+Hotel&family=Chewy&family=Concert+One&family=Fascinate&family=Fascinate+Inline&family=Fredoka+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Londrina+Solid:wght@100;300;400;900&family=Noto+Sans+JP:wght@100&family=Patrick+Hand&family=Megrim&family=Monoton&family=Pacifico&family=Pattaya&family=Reem+Kufi&family=Shrikhand&display=swap');
+
+:root{
+    --shadow1:rgb(173, 64, 0);
+    --shadow2:rgb(255, 99, 8);
+    --shadow3:rgb(43, 81, 124);
+    --shadow4: rgb(255, 221, 70);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    margin: 0;
+    background: url('images/background5.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body{
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.footer, .grid-settings, .main, .grid, .options {
+    display: flex;
+}
+
+.grid-settings, .main, .footer {
+    justify-content: center;
+}
+
+.options {
+    flex-direction: column;
+}
+
+.grid-settings{
+    margin: 0 auto 1.25rem auto;
+    width: 475px;
+    justify-content: center;
+}
+
+.input-grid{
+    border-color: var(--shadow3);
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1.4rem;
+    border-image: none;
+    border-style: solid;
+    border-width: 1.5px;
+    font-family: 'Patrick Hand', cursive;
+    padding-left: 6px;
+}
+
+.input-grid:focus{
+    border-color: var(--shadow1);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    outline: none;
+}
+
+.input-grid:hover{
+    border-color: var(--shadow1); 
+}
+
+.reset-text{
+    font-size: 1.8rem;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+    margin-right: 10px;
+    color: rgb(56, 56, 56);
+    padding-bottom: 1px;
+}
+
+.btn{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    padding: 0;
+    height: 37px;
+    margin-bottom: 25px;
+    border-color: var(--shadow3);
+    background-color:rgba(81, 220, 255, 0.473);
+}
+
+.btn::selection{
+    color: none;
+    background-color: none;
+}
+
+.btn:hover{
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-color: var(--shadow1);
+}
+
+.btn:focus{
+    outline:none;
+}
+
+.btn-reset{
+    color: rgb(56, 56, 56);
+    width: 185px;;
+    margin-bottom: 0 !important;
+}
+
+.btn-reset:hover{
+    padding-bottom: 4px;
+    text-shadow: 0.5px 0.5px 0 rgba(255, 231, 124, 0.507),
+    1px 1px 0 rgba(255, 231, 124, 0.507),
+    1.5px 1.5px 0 rgba(255, 231, 124, 0.507),
+    2px 2px 0 rgba(255, 231, 124, 0.507),
+    2.5px 2.5px 0 rgba(255, 99, 8, 0.411), 
+    3px 3px 0 rgba(255, 99, 8, 0.411), 
+    3.5px 3.5px 0 rgba(255, 99, 8, 0.411), 
+    4px 4px 0 rgba(255, 99, 8, 0.411);
+}
+
+.btn-reset:active, .btn-mode:active, .btn-clear:active{
+    background-color:rgba(65, 213, 250, 0.678);
+    border-width: 2px;
+}
+
+.options{
+    width: 125px;
+    justify-content: center;
+}
+
+.grid{
+    box-shadow: 0 0 0 5px var(--shadow3),
+    0 0 0 10px rgb(107, 168, 184);
+    border-radius: 1px;
+    width: 650px;
+    height: 650px;
+    min-width: 650px;
+    min-height: 650px;
+    margin-right: 25px;
+    margin-left: 150px;
+    background-image: url(images/canvas3.jpg);
+    background-repeat: repeat;
+    background-size: 350px;
+    flex-wrap: wrap;
+}
+
+.grid:hover{
+    box-shadow: 
+    0 0 0 5px var(--shadow1),
+    0 0 0 10px var(--shadow3);
+}
+
+.credit{
+    margin: 0 10px 0 0;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(56, 56, 56);
+}
+
+.footer{
+    width: 100%;
+    margin-top: 1.1rem;
+    align-items: center;
+}
+
+.social{
+    width: 40px;
+}
+
+a{
+    margin-right: 10px;
+}
+
+.title {
+    text-align: center;
+    line-height: 110%;
+    margin: 1rem auto 1.5rem auto;
+    font-family: 'Pacifico', cursive;
+    font-size: 4.5rem;
+    color: rgb(255, 221, 70);
+    white-space: nowrap;
+    text-shadow: -1px -1px 0 var(--shadow1),  
+    1px -1px 0 var(--shadow1),
+    -1px 1px 0 var(--shadow1),
+     1px 1px 0 var(--shadow1),
+    -1.5px -1.5px 0 var(--shadow1),  
+    1.5px -1.5px 0 var(--shadow1),
+    -1.5px 1.5px 0 var(--shadow1),
+     1.5px 1.5px 0 var(--shadow1),
+    0.5px 0.5px 0 var(--shadow1),
+    1px 1px 0 var(--shadow1),
+    1.5px 1.5px 0 var(--shadow1),
+    2px 2px 0 var(--shadow1),
+    2.5px 2.5px 0 var(--shadow1), 
+    3px 3px 0 var(--shadow1), 
+    3.5px 3.5px 0 var(--shadow1), 
+    4px 4px 0 var(--shadow1), 
+    4.5px 4.5px 0 var(--shadow1), 
+    5px 5px 0 var(--shadow1), 
+    5.5px 5.5px 0 var(--shadow2),
+    6px 6px 0 var(--shadow2), 
+    6.5px 6.5px 0 var(--shadow2), 
+    7px 7px 0 var(--shadow2), 
+    7.5px 7.5px 0 var(--shadow2),
+    8px 8px 0 var(--shadow2), 
+    8.5px 8.5px 0 var(--shadow2),
+    9px 9px 0 var(--shadow2), 
+    9.5px 9.5px 0 var(--shadow2), 
+    10px 10px 0 var(--shadow2), 
+    10.5px 10.5px 0 var(--shadow2),
+    11px 11px 0 var(--shadow3), 
+    11.5px 11.5px 0 var(--shadow3), 
+    12px 12px 0 var(--shadow3), 
+    12.5px 12.5px 0 var(--shadow3),
+    13px 13px 0 var(--shadow3), 
+    13.5px 13.5px 0 var(--shadow3),
+    14px 14px 0 var(--shadow3), 
+    14.5px 14.5px 0 var(--shadow3), 
+    15px 15px 0 var(--shadow3), 
+    15.5px 15.5px 0 var(--shadow3);
+}
+
+.btn-eraser-clicked{
+    background-color: rgba(255, 106, 68, 0.527);
+    font-size: 1.18rem;
+    border-color: var(--shadow1);
+    border-width: 2px;
+}
+
+.btn-rainbow-clicked{
+    font-size: 1.25rem;
+    border-color: var(--shadow1);
+    border-width: 2px;
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+    text-shadow: -1px -1px 0 white,  
+    1px -1px 0 white,
+    -1px 1px 0 white,
+     1px 1px 0 white;
+}
+
+.btn-random-clicked{
+    font-size: 1.25rem;
+    border-color: var(--shadow1);
+    border-width: 2px;
+    background-image: url(images/background4.jpg);
+    background-size: cover;
+    text-shadow: -1px -1px 0 white,  
+    1px -1px 0 white,
+    -1px 1px 0 white,
+     1px 1px 0 white;
+}
+
+.btn-mode{
+    white-space: nowrap;
+    background-color: hsl(0,0,0);
+}
+
